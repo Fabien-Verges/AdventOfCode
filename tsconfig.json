@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es2020",
+    "incremental": true,
+    "outDir": "dist",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": [
+      /* List of folders to include type definitions from. */
+      "node_modules/@types"
+    ],
+
+    "allowSyntheticDefaultImports": true,
+    "preserveSymlinks": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "src/**/*.json"],
+  "exclude": ["dist"]
+}

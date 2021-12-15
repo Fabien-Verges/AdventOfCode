@@ -1,0 +1,30 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/puzzle-run.ts",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "fs": "^0.0.1-security",
+    "global": "^4.4.0",
+    "handlebars": "^4.7.7",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7",
+    "signale": "^1.4.0",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@types/signale": "^1.4.2",
+    "eslint": "^7.15.0",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "ts-node src/puzzle-run",
+    "run:create": "ts-node src/puzzle-create"
+  },
+  "author": "Fabien VERGES",
+  "license": "ISC"
+}
