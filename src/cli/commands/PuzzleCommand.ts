@@ -4,6 +4,7 @@ import { PuzzleRunCommand } from "./PuzzleRunCommand";
 
 const puzzleCommand = new Command('puzzle');
 
+puzzleCommand.alias('p');
 puzzleCommand.addCommand(PuzzleCreateCommand());
 puzzleCommand.addCommand(PuzzleRunCommand());
 

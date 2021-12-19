@@ -25,7 +25,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "ts-node src/puzzle-run",
     "run:create": "ts-node src/puzzle-create",
-    "puzzle": "ts-node src/cli/commands/PuzzleCommand"
+    "puzzle": "ts-node src/cli/commands/PuzzleCommand",
+    "p": "yarn puzzle"
   },
   "author": "Fabien VERGES",
   "license": "ISC"
