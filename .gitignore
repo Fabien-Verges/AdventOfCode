@@ -1,5 +1,7 @@
 dist/
 node_modules/
 .idea/
-# Remove to store your puszzles
+
+# Remove theses lines to store your puszzles
 src/Puzzles/
+src/db/puzzles.json
