@@ -11,9 +11,10 @@ export const createHandler = async (options: any) => {
 
     const puzzles = await getPuzzles({ year: options.year, day: options.day });
     if (puzzles.length) {
-        if(puzzles.length === 1) logger.warn('It seems that a puzzle already exists for this day.');
+        if(puzzles.length === 1) {
+            logger.warn('It seems that a puzzle already exists for this day.')
+        } else logger.warn('It seems that some puzzles already exists for this day.');
 
-        logger.warn('It seems that some puzzles already exists for this day.');
         const choice = await getCreatePrompts(puzzles, options.name);
 
         if(choice.create) {
