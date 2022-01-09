@@ -43,7 +43,7 @@ export const createPuzzle = async (properties: any) => {
     const puzzle: Puzzle = {
         id: randomUUID(),
         name: properties.name,
-        day: properties.day,
+        day: getDefaultPuzzleDay(properties.day).toString(),
         year: properties.year,
         number: existingPuzzles.filter(p => p.year === properties.year && p.day === properties.day).length + 1,
         last: false,
