@@ -11,11 +11,14 @@
     "handlebars": "^4.7.7",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
+    "promptly": "^3.2.0",
     "signale": "^1.4.0",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.178",
     "@types/node": "^16.11.12",
+    "@types/promptly": "^3.0.2",
     "@types/signale": "^1.4.2",
     "eslint": "^7.15.0",
     "typescript": "^4.1.3"

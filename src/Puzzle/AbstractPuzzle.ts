@@ -5,6 +5,8 @@ export type PuzzleProperties = {
   year: number;
   day: number;
   position?: number;
+  number?: number
+  last?: boolean;
 };
 
 export class AbstractPuzzle {
