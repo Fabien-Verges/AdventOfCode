@@ -1,9 +1,10 @@
 import { promises as fs } from "fs";
 
 export const camelize = (str: string) =>
-  str
-    .replace(/\b(\w)/g, (match, capture) => capture.toUpperCase())
-    .replace(/\s+/g, "");
+    str
+        .replace(/\b(\w)/g, (match, capture) => capture.toUpperCase())
+        .replace(/\s+/g, "")
+        .replace(/-+/g, "");
 
 export const hasBeenIndexed = async (path: string, n: number | string) => {
   return fs
