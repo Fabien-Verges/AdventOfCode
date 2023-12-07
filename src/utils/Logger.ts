@@ -1,38 +1,40 @@
-import { Signale } from "signale";
+import pkg from 'signale';
 
-export const  logger = new Signale({
-    scope: "advent-of-code",
+const { Signale } = pkg;
+
+export const logger = new Signale({
+    scope: 'advent-of-code',
     types: {
         santa: {
-            badge: "🎅",
-            color: "red",
-            label: "santa",
-            logLevel: "info",
+            badge: '🎅',
+            color: 'red',
+            label: 'santa',
+            logLevel: 'info',
         },
         choice: {
-            badge: "🔹",
-            color: "blue",
-            label: "choice",
-            logLevel: "info",
-        }
+            badge: '🔹',
+            color: 'blue',
+            label: 'choice',
+            logLevel: 'info',
+        },
     },
 });
 
-export const  interactiveLogger = new Signale({
-    scope: "advent-of-code",
+export const interactiveLogger = new Signale({
+    scope: 'advent-of-code',
     interactive: true,
     types: {
         santa: {
-            badge: "🎅",
-            color: "red",
-            label: "santa",
-            logLevel: "info",
+            badge: '🎅',
+            color: 'red',
+            label: 'santa',
+            logLevel: 'info',
         },
         choice: {
-            badge: "🔹",
-            color: "blue",
-            label: "choice",
-            logLevel: "info",
-        }
+            badge: '🔹',
+            color: 'blue',
+            label: 'choice',
+            logLevel: 'info',
+        },
     },
 });

@@ -1,36 +1,39 @@
 {
-  "name": "adventofcode",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/puzzle-run.ts",
-  "dependencies": {
-    "axios": "^0.24.0",
-    "commander": "^8.3.0",
-    "fs": "^0.0.1-security",
-    "global": "^4.4.0",
-    "handlebars": "^4.7.7",
-    "lodash": "^4.17.21",
-    "path": "^0.12.7",
-    "promptly": "^3.2.0",
-    "signale": "^1.4.0",
-    "ts-node": "^10.4.0"
-  },
-  "devDependencies": {
-    "@types/lodash": "^4.14.178",
-    "@types/node": "^16.11.12",
-    "@types/promptly": "^3.0.2",
-    "@types/signale": "^1.4.2",
-    "eslint": "^7.15.0",
-    "typescript": "^4.1.3"
-  },
-  "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "ts-node src/puzzle-run",
-    "run:create": "ts-node src/puzzle-create",
-    "puzzle": "ts-node src/cli/commands/PuzzleCommand",
-    "p": "yarn puzzle"
-  },
-  "author": "Fabien VERGES",
-  "license": "ISC"
+    "name": "adventofcode",
+    "version": "1.0.0",
+    "description": "CLI tool to facilitate the Advent of Code puzzle completion in Typescript",
+    "main": "src/puzzle-run.ts",
+    "type": "module",
+    "dependencies": {
+        "axios": "^1.6.2",
+        "commander": "^11.1.0",
+        "cross-env": "^7.0.3",
+        "figlet": "^1.7.0",
+        "fs": "^0.0.1-security",
+        "global": "^4.4.0",
+        "handlebars": "^4.7.8",
+        "path": "^0.12.7",
+        "promptly": "^3.2.0",
+        "signale": "^1.4.0",
+        "ts-node": "^10.9.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.3",
+        "@types/promptly": "^3.0.5",
+        "@types/signale": "^1.4.7",
+        "eslint": "^8.55.0",
+        "typescript": "^5.3.2"
+    },
+    "scripts": {
+        "aoc": "npx aoc",
+        "build": "tsc --project tsconfig.json",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "run:create": "ts-node src/puzzle-create",
+        "puzzle": "ts-node src/cli/commands/PuzzleCommand"
+    },
+    "bin": {
+        "aoc": "bin/aoc.js"
+    },
+    "author": "Fabien VERGES",
+    "license": "ISC"
 }

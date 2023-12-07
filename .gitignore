@@ -3,6 +3,5 @@ node_modules/
 .idea/
  *.log
 
-# Remove theses lines to store your puszzles
-src/Puzzles/
-src/db/puzzles.json
+# Remove theses lines to store your puzzles in your git repository
+db

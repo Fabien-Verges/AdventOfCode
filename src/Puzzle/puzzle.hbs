@@ -1,11 +1,37 @@
-import { AbstractPuzzle, PuzzleProperties } from '../../../Puzzle';
+{{#if isTS}}
+/**
+ *  {{year}} - Day {{day}}: {{puzzleClassName}}
+ */
 
-export class {{ puzzleClassName }} extends AbstractPuzzle {
-  constructor(properties: PuzzleProperties) {
-    super(properties);
-  }
+const INPUT = `{{input}}`
 
-  resolve(input: any) {
-    // Your magic happens here
-  }
-}
+// Your magic here 🧙‍♂️
+const result = "The right answer"
+
+return result
+{{/if}}
+{{#if isJS}}
+/**
+ *  {{year}} - Day {{day}}: {{puzzleClassName}}
+ */
+
+const INPUT = `{{input}}`
+
+// Your magic here 🧙‍♂️
+const result = "The right answer"
+
+return result
+{{/if}}
+{{#if isPY}}
+# {{year}} - Day {{day}}: {{puzzleClassName}}
+INPUT = "{{input}}"
+
+
+# Your magic here 🧙‍♂️
+result = "The right answer"
+
+
+# Remember to print the result !
+print(result)
+{{/if}}
+
